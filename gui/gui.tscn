@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ykouvug1cjgm"]
+
+[ext_resource type="Script" path="res://gui/HealthBar.cs" id="1_4mfmj"]
+
+[node name="Gui" type="CanvasLayer"]
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -346.0
+offset_top = 9.0
+offset_right = -9.0
+offset_bottom = 36.0
+grow_horizontal = 0
+script = ExtResource("1_4mfmj")

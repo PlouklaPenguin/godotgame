@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bboby0tpbhw3b"]
+
+[ext_resource type="Script" path="res://enemy/runner/Runner.cs" id="1_3c1bt"]
+[ext_resource type="Texture2D" uid="uid://jyoorlhu82f5" path="res://enemy/runner/assets/viktor.jpg" id="1_ue6hp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0jvlb"]
+size = Vector2(75, 58)
+
+[node name="Runner" type="CharacterBody2D"]
+script = ExtResource("1_3c1bt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.90735e-06, -4)
+scale = Vector2(0.112256, 0.0670118)
+texture = ExtResource("1_ue6hp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -5)
+shape = SubResource("RectangleShape2D_0jvlb")
